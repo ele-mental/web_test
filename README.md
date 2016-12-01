@@ -20,11 +20,13 @@ There will be instructions and they will go here. Basically it will show how to 
 
 For now here is the [marginally useful Pelican getting started guide](http://docs.getpelican.com/en/3.1.1/getting_started.html).
 
+The [style and templating document will come in useful](http://docs.getpelican.com/en/3.1.1/themes.html) at some point
+
 ### Todo
 
 Almost everything but specifically:
 
-  - [ ] Push to S3 w/ Travis: It's configured on the Travis and S3 side
+  - [x] Push to S3 w/ Travis: It's configured on the Travis and S3 side
   - [ ] Generate some test content.
   - [ ] Test migrations of existing eleweb styling
   - [ ] Test of new styling / wordpress templates
