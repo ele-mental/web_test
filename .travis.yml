@@ -1,21 +1,20 @@
 language: python
 python:
-    - "2.7"
-install: "pip install -r requirements.txt"
-script: "pelican content/"
+- '2.7'
+install: pip install -r requirements.txt
+script: pelican content/
 deploy:
-    provider: s3
-    access_key_id: $AWS_ACCESS_KEY # declared in Travis repo settings
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: elementalweb
-    endpoint: https://elementalweb.s3-website-us-east-1.amazonaws.com
-    region: us-east-1
-    skip_cleanup: true
-    local-dir: output
-    acl: public_read
-    detect_encoding: true
+  provider: s3
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: jbfS6wpBM4k0m+/ARsJlxzydWFCj+Wibqik/9UviRN+PjTBB1+4no0nC7K6APs8a3e1KffOWryWyHcTvSZYDm6vG3iEkQA33maOMa0D9/dNogZ6BOj6LA3uXSA8ykfP/t2O7SfoPD9hvpm0s+pbaf4kpMto94pgqzpwVi5rffmVPck/C4mAqcUhFPNDSQ/JEsN3wbg/bzhREY5imr0YVVm9vlrGWj3ycjgNcJ3LdYEezGKM3/AlmLkNnXwLUCAPTj9ws1Ny7A4tx09rQgVTYkK4NfWpyoXQgBhWyofXXJ+lgVF//G7YpN5c+qE5UcNyV8WUD6vUaUNZiWUBpRLQJGI5RITtPHNTAV6CeTQrJeSgMXdv7e/n9rmKN6pJWGNfkajxExZZjCvm4QqIvHwRi92JV3Oocg8wtdZObCUgfG4udXqqtprVrY3s59yP4IqKuPolZ3ltJvEvtprIVbMbdaRXLuVS8/cLC7ntzo6Lj6PZJEaFPXmGOCRq4RWaJBGVt6xcH6cFjFhx0ej++j7HFnm6cJGEIr1NSENhk1r+KF2z04Lkv/gpheU6yu8oka0Dsa0u/wn6zv5CR6BuvMX0eG0KPd0ksR9fUSdlA6w17Z4YXwFhH3PVJ6oV2OMz0guttkQvrMx5/FzvptXHLJmEL5crSBRpq/s2YkqNBDgeuW4o=
+  bucket: elementalweb
+  endpoint: https://elementalweb.s3-website-us-east-1.amazonaws.com
+  region: us-east-1
+  skip_cleanup: true
+  local-dir: output
+  acl: public_read
+  detect_encoding: true
 notifications:
-    email:
-        on_failure: always
-
-
+  email:
+    on_failure: always
