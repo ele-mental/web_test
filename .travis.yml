@@ -10,7 +10,6 @@ deploy:
   secret_access_key:
     secure: d01U5XreHQYlT7LjZU6JP4k3xBXxsQi6Bo6yXBLwlZDUODvc5QBRcjQqOCIce0TM4CrQDlWtS9in5cXsHtEiHR+UE+ce5j/MhJAxpRwjx8Hko+PDM6Oq1E5RQUYrfcqavGFtyFloWksaOVmkt1Twfnk4ZpqX+jZ0qK9+LTbqo6LewJ+MW4B1CJMMe7pye+ZR5ShxfEyt2uFhpxaJ/FzYCEzSwrph/0D2Kv6TKqOWnem4yEQMCAzaQNvfEfyJe3kE1ooEE/WGDzDSNhuqNircOVic+n0HhELJWhku2HTGr7MJER6WLW7fQhY/N2UeYQu5BtTOs9SFylpK1YmEm7lmumnmeUzWXd2G03xm0I5J9npS3bJi5lP5q4GqgeOAUR5jlwnbJepJb8HAfFWt6Aum6VkpyuVWPqsjTTiRjt0PW3OYFoPcYHNt5tgV0OgNELUCKKx9Z572HKPD3Ft5+o67VlhrDXzu4GJo4HRh6XcmnQFVbX+K33o9N4P3vXGm6OP7d+Vj6fZ5MlNmTZYOj7oOtySxvpEna20gkjE4gBQuzMDysBNMBp49LRAb9l+iC3LqUdDP4f/XzUjwWsR3j80T5yVO5Y/UETwHmIDzF42w6+mQXKgNRkUCqPxnWypjXSyAbzyOx+3lTanvkWVvOn0Fr/q477iMi5vDRt/mYdbgLOs=
   bucket: elementalweb
-  endpoint: https://elementalweb.s3-website-us-east-1.amazonaws.com
   region: us-east-1
   skip_cleanup: true
   local-dir: output
