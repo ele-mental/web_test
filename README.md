@@ -1,4 +1,4 @@
-# ele_mental web test
+# `ele_mental` web test
 
 This is a sample Pelican site set up to test some next generation ideas on hosting the ele-mental web services.
 
@@ -27,7 +27,7 @@ The [style and templating document will come in useful](http://docs.getpelican.c
 Almost everything but specifically:
 
   - [x] Push to S3 w/ Travis: It's configured on the Travis and S3 side
-  - [ ] Generate some test content.
+  - [x] Generate some test content.
   - [ ] Test migrations of existing eleweb styling
   - [ ] Test of new styling / wordpress templates
   - [ ] Can existing web directory structure be ported to keep link integrity.
