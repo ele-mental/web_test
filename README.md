@@ -4,7 +4,7 @@ This is a sample Pelican site set up to test some next generation ideas on hosti
 
 ### Static Web Frameworks and Pelican
 
-In order to reduce the complexity, save money and increase security, we will be heavily leaning on Static web frameworks in the next generation of ele_mental web services. Static means that there are no databases or dynamically generated pages involved in creating the pages. This reduces the chance that things will break and helps reduce our costs.
+In order to reduce the complexity, save money and increase security, we will be heavily leaning on Static web frameworks in the next generation of `ele_mental` web services. Static means that there are no databases or dynamically generated pages involved in creating the pages. This reduces the chance that things will break and helps reduce our costs.
 
 After some research, we will be doing our initial testing on Pelican.  It's a Python based static web framework. It has the benefit of supporting WordPress templates (in theory).  This is subject to testing, but initial tests look good
 
@@ -28,7 +28,8 @@ Almost everything but specifically:
 
   - [x] Push to S3 w/ Travis: It's configured on the Travis and S3 side
   - [x] Generate some test content.
+  - [x] Initial testing of style and templating
+  - [ ] Test customized styling templates
   - [ ] Test migrations of existing eleweb styling
-  - [ ] Test of new styling / wordpress templates
   - [ ] Can existing web directory structure be ported to keep link integrity.
   - [ ] other stuff as needed. 
