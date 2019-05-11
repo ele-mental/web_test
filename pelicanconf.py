@@ -3,8 +3,13 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'table of ele_ments'
-SITENAME = u'ele_mental'
+# SITENAME = u'ele_mental'
+SITENAME = u'. . .e l e _ m e n t a l. . .'
 SITEURL = ''
+
+ARTICLE_PATHS = ['posts']
+ARTICLE_URL = 'posts/{category}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{category}/{slug}/index.html'
 
 PATH = 'content'
 
@@ -29,6 +34,10 @@ LINKS = (('Resident Advisor', 'https://www.residentadvisor.net'),
 # Social widget
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
+
+DISPLAY_PAGES_ON_MENU = False
+
+STATIC_PATHS = ['ele_images','favicon.ico']
 
 DEFAULT_PAGINATION = False
 
