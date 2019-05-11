@@ -20,6 +20,14 @@
     line-height: 200%;
 }
 
+.bg-ele-dark{
+    background-color:#52799b
+}
+
+.bg-ele-medium{
+    background-color:#cccccc
+}
+
 .summary {
     margin-bottom: 2em;
     margin-top: 2em;

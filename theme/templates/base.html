@@ -19,20 +19,40 @@
 	<link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet">
 	{% block head %}{% endblock %}
 </head>
-<body>
+<body class="bg-ele-medium">
 <div class="container">
-	<div class="page-header">
-		<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a>
-			<br>{% if SITESUBTITLE %}<small>{{ SITESUBTITLE }}</small></h1>{% endif %}
-	</div>
+  <div class="page-header"> 
+  		<h3><a align="center" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+  			<br>{% if SITESUBTITLE %}<small>{{ SITESUBTITLE }}</small></h3>
+   {% endif %}
+  </div>
+  <div class="row">
+    <table border=0 width="600" align="center">
+      <tr class=small> 
+        <td align=right width=185 height="186" valign="bottom">
+        </td>
+        <td rowspan=2 valign=TOP align="center" width="230">
+          <img alt="e l e . m e n t a l" 
+               src="{{ SITEURL }}/ele_images/ele_center-blurlowres.gif"
+               name="ele_center" width="226" height="381" border="0" 
+               align="middle">
+        </td>
+        <td align=left height="186">
+        </td>
+    </table>
+  </div>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+    <table border=0 width="600" align="center">
+       <td rowspan=2 valign=TOP align="center">
+         <div class="col-md-8 col-md-offset-2">
 			{% block content %}{% endblock %}
+       </td>
+    </table>
 		</div>
 	</div> {# End row #}
 	<!-- <hr> -->
 </div> <!-- /container -->
-<footer class="aw-footer bg-danger">
+<footer class="aw-footer bg-ele-dark">
 	<div class="container"> <!-- footer -->
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
@@ -91,7 +111,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center center-block aw-bottom">
-			<p>&copy; {{ AUTHOR }} 2016</p>
+			<p>&copy; {{ AUTHOR }} 2019</p>
 			<p>Powered by Pelican</p>
 		</div>
 	</div>
