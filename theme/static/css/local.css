@@ -1,4 +1,61 @@
+/* Bring in some basic properties for override */
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+    font-family:inherit;
+    font-weight:200;
+    line-height:1.1;
+    color:inherit
+}
 
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
+.h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small,
+h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small,
+.h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small{
+    font-weight:100;
+    line-height:1;
+    color:#777
+}
+
+h1,.h1,h2,.h2,h3,.h3{
+    margin-top:20px;
+    margin-bottom:10px
+}
+
+h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,
+h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small{
+    font-size:65%
+}
+
+h4,.h4,h5,.h5,h6,.h6{
+    margin-top:10px;
+    margin-bottom:10px
+}
+
+h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,
+h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small{
+    font-size:75%
+}
+h1,.h1{
+    font-size:36px
+}
+h2,.h2{
+    font-size:30px
+}
+h3,.h3{
+    font-size:24px
+}
+h4,.h4{
+    font-size:18px
+}
+h5,.h5{
+    font-size:14px
+}
+h6,.h6{
+    font-size:12px
+}
+
+
+/* Legacy overrides. TODO - sort through these and improve/clear*/
 .my-list-style {
     margin-left: 0;
 }
@@ -18,14 +75,6 @@
 
 .aw-footer li {
     line-height: 200%;
-}
-
-.bg-ele-dark{
-    background-color:#52799b
-}
-
-.bg-ele-medium{
-    background-color:#cccccc
 }
 
 .summary {
@@ -48,6 +97,17 @@
 .article-header {
     margin-bottom: 1em;
 }
+
+/* Customized background style for ele_mental */
+.bg-ele-dark{
+    background-color:#52799b
+}
+
+.bg-ele-medium{
+    background-color:#cccccc
+}
+
+
 
 /**
  * Overrides of notebook CSS for static HTML export
@@ -115,32 +175,14 @@ div.collapseheader {
 
 .pagination {
      margin:20px 0;
-}
- .pagination ul {
-     display:inline-block;
-    /* Display and zoom have * properties which should be fixed */
-    *display:inline;
-    *zoom:1;
-    margin-left:0;
-    /* margin-bottom can't be used with display: inline. */
-    margin-bottom:0;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    border-radius:4px;
-    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);
-    box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);
+     text-align: center;
 }
  .pag.pagination {
      margin:20px 0;
 }
  .pagination ul {
-     display:inline-block;
-    /* Display and zoom have * properties which should be fixed */
-    *display:inline;
-    *zoom:1;
+    display:table;
     margin-left:0;
-    /* margin-bottom can't be used with display: inline. */
     margin-bottom:0;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -331,4 +373,63 @@ div.collapseheader {
     padding:0 6px;
     font-size:9.75px;
 }
- 
+
+/* Override all of page-header from bootstrap.min.css */
+
+.page-header{
+    padding-bottom:9px;
+    margin:40px 0 20px;
+    border-bottom:1px solid #a5adbc 
+}
+ul,ol{
+    margin-top:0;
+    margin-bottom:10px
+}
+ul ul,ol ul,ul ol,ol ol{
+    margin-bottom:0
+}
+.list-unstyled{
+    padding-left:0;
+    list-style:none
+}
+.list-inline{
+    padding-left:0;
+    margin-left:-5px;
+    list-style:none
+}
+.list-inline>li{
+    display:inline-block;
+    padding-right:5px;
+    padding-left:5px
+}
+dl{
+    margin-top:0;
+    margin-bottom:20px
+}
+dt,dd{
+    line-height:1.42857143
+}
+dt{
+    font-weight:700
+}
+dd{
+    margin-left:0
+}
+@media (min-width:768px){
+    .dl-horizontal dt{
+        float:left;
+        width:160px;
+        overflow:hidden;
+        clear:left;
+        text-align:right;
+        text-overflow:ellipsis;
+        white-space:nowrap
+    }
+    .dl-horizontal dd{
+        margin-left:180px
+    }
+}
+abbr[title],abbr[data-original-title]{
+    cursor:help;
+    border-bottom:1px dotted #777
+}
