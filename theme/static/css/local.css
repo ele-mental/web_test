@@ -1,3 +1,55 @@
+/* inline css lifted from the origional ele_mental site and prettyfied  */
+a {
+     text-decoration: none;
+	   color: #810d00;
+}
+}
+ a:visited, a:hover, a:active {
+     text-decoration: none;
+}
+ a {
+     text-decoration: none;
+}
+ a:visited {
+     text-decoration: none;
+}
+ a:hover {
+     text-decoration: underline;
+}
+ a:active {
+     text-decoration: underline;
+}
+ a {
+     text-decoration: none;
+}
+ a:visited {
+     text-decoration: none;
+}
+ a:hover {
+     text-decoration: underline;
+}
+ a:active {
+     text-decoration: underline;
+}
+ p {
+     font: normal 10px Arial, Helvetica, sans-serif 
+}
+ .body {
+     font: normal 12px Arial, Helvetica, sans-serif 
+}
+ .small {
+     font: normal 10px Arial, Helvetica, sans-serif 
+}
+ .smallbold {
+     font: bold 10px Arial, Helvetica, sans-serif 
+}
+ .large {
+     font: bold 14px Arial, Helvetica, sans-serif 
+}
+ .medium {
+     font: normal 11px Arial, Helvetica, sans-serif
+}
+
 /* Bring in some basic properties for override */
 h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6{
