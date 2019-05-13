@@ -1,9 +1,5 @@
 what_was
-<<<<<<< HEAD
-#######
-=======
 ##########
->>>>>>> Placeholder what_was page
 
 :date: 1995-07-03 14:34
 :tags: what, origin stories, what was
